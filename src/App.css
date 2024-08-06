@@ -1,38 +1,110 @@
-.App {
+/*   Made with Love by Sanket   */
+
+@import url('https://fonts.googleapis.com/css2?family=Timmana&display=swap');
+
+body{
+  padding: 0;
+  height: 100vh;
+  /* background-color: rgb(228, 228, 228); */
+  background-image: linear-gradient(to right, #757F9A, #D7DDE8);
+  font-family: "Timmana", sans-serif;
+ 
+}
+
+.app{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  /* background-color: gray; */
+}
+
+.header{
+  background-color: rgb(255, 234, 2);
+  height:10vh;
+  width: 100%;
   text-align: center;
+  margin: 0;
+  letter-spacing: 2px;
+  word-spacing: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  margin: 0;
+padding-top : 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movie p{
+  margin-left: 8px;
+  letter-spacing: 2px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.movie{
+  background-color: black;
+border: 1px solid grey;
+padding: 5px;
+text-align: start;
+font-weight: bold;
+width: 21%;
+margin-top: 2%;
+color: white;
+border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.movie img{
+  width: 100%;
+  height: 250px;
+border-radius: 10px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 480px) {
+  
+
+  .header{
+    height:8vh;
+    margin-bottom: -2%;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 8px;
+  }
+  .movie{
+    background-color: black;
+  border: 1px solid grey;
+  padding: 5px;
+  text-align: start;
+  font-size: 17px;
+  font-weight: bold;
+  width: 30%;
+  margin-top: 2%;
+  height: 330px
+  }
+
+  .movie p{
+    margin-left: 8px;
+  letter-spacing: 1px;
+margin-top: -3px;
+  }
+  
+  .movie img{
+    height: 160px;
+  
+  }
+
+  .movie .year{
+    font-size: 15px;
   }
 }
