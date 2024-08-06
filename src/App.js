@@ -14,7 +14,6 @@ function App() {
 
     {
       movies.map((e)=>{
-     {/* return( <Movie title={e.Title} year={e.Year} img={e.Poster}/> */}
      return( <Movie title={e.title} year={e.year} img={e.thumbnail}/>
 
       )})
